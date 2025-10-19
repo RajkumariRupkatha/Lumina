@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .error {
+            border-left-color: #f44336;
+            background: #ffebee;
+        }
+        .success {
+            border-left-color: #4CAF50;
+            background: #e8f5e9;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Gemini API Test</h1>
+
+        <div class="info">
+            <strong>Testing:</strong> Verifying if your Gemini API key works correctly
+        </div>
+
+        <button onclick="testAPI()">Test Gemini API</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const GEMINI_API_KEY = 'AIzaSyA2n9DjaC5hhTad33Zjgq-UadNc7HsCsMQ';
+        const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '⏳ Testing API connection...';
+            resultDiv.className = '';
+
+            console.log('🔑 API Key:', GEMINI_API_KEY ? 'Present' : 'Missing');
+            console.log('📡 Calling Gemini API...');
+
+            try {
+                const prompt = 'Generate exactly 3 simple math flashcards. Return ONLY a JSON array with this format: [{"question": "...", "answer": "..."}]';
+
+                const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: prompt
+                            }]
+                        }]
+                    })
+                });
+
+                console.log('📥 Response status:', response.status, response.statusText);
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('❌ API Error:', errorData);
+
+                    resultDiv.className = 'error';
+                    resultDiv.innerHTML = `❌ API Error (${response.status})\n\n${JSON.stringify(errorData, null, 2)}\n\n`;
+
+                    if (errorData.error?.message) {
+                        resultDiv.innerHTML += `\nError Message: ${errorData.error.message}\n`;
+                    }
+
+                    if (response.status === 400) {
+                        resultDiv.innerHTML += '\n⚠️ This might be an API key issue. Please verify your key at: https://aistudio.google.com/apikey';
+                    }
+                    return;
+                }
+
+                const data = await response.json();
+                console.log('✅ API Response:', data);
+
+                if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
+                    resultDiv.className = 'error';
+                    resultDiv.innerHTML = `❌ Invalid Response Structure\n\n${JSON.stringify(data, null, 2)}`;
+                    return;
+                }
+
+                const resultText = data.candidates[0].content.parts[0].text;
+                console.log('📝 Generated text:', resultText);
+
+                resultDiv.className = 'success';
+                resultDiv.innerHTML = `✅ API is Working!\n\n`;
+                resultDiv.innerHTML += `Response Length: ${resultText.length} characters\n\n`;
+                resultDiv.innerHTML += `Generated Content:\n${resultText}\n\n`;
+                resultDiv.innerHTML += `Full API Response:\n${JSON.stringify(data, null, 2)}`;
+
+            } catch (error) {
+                console.error('❌ Error:', error);
+                resultDiv.className = 'error';
+                resultDiv.innerHTML = `❌ Error: ${error.message}\n\n`;
+                resultDiv.innerHTML += `Error Type: ${error.constructor.name}\n`;
+                resultDiv.innerHTML += `\n${error.stack}`;
+            }
+        }
+    </script>
+</body>
+</html>
