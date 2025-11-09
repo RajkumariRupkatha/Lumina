@@ -362,7 +362,112 @@ const STUDENT_DATA = {
         { date: '2024-10-07', status: 'present' },
         { date: '2024-10-09', status: 'present' }
       ],
-      modules: []
+      modules: [
+        {
+          id: 'dsa-m1',
+          week: 1,
+          title: 'Introduction to Algorithms',
+          completion: 100,
+          status: 'completed',
+          xp: 20,
+          materials: [
+            { type: 'slides', title: 'Algorithm Basics.pdf', url: '#' },
+            { type: 'video', title: 'Complexity Analysis', duration: '42 min' },
+            { type: 'pdf', title: 'Big O Notation Guide.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m2',
+          week: 2,
+          title: 'Arrays & Linked Lists',
+          completion: 100,
+          status: 'completed',
+          xp: 25,
+          materials: [
+            { type: 'slides', title: 'Array Operations.pdf', url: '#' },
+            { type: 'video', title: 'Linked List Implementation', duration: '50 min' },
+            { type: 'pdf', title: 'Memory Management.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m3',
+          week: 3,
+          title: 'Stacks & Queues',
+          completion: 100,
+          status: 'completed',
+          xp: 25,
+          materials: [
+            { type: 'slides', title: 'Stack Implementation.pdf', url: '#' },
+            { type: 'video', title: 'Queue Applications', duration: '45 min' },
+            { type: 'pdf', title: 'LIFO vs FIFO.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m4',
+          week: 4,
+          title: 'Trees & Graphs',
+          completion: 75,
+          status: 'in-progress',
+          xp: 30,
+          materials: [
+            { type: 'slides', title: 'Binary Trees.pdf', url: '#' },
+            { type: 'video', title: 'Graph Traversal', duration: '55 min' },
+            { type: 'pdf', title: 'Tree Algorithms.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m5',
+          week: 5,
+          title: 'Sorting Algorithms',
+          completion: 0,
+          status: 'available',
+          xp: 25,
+          materials: [
+            { type: 'slides', title: 'Sorting Methods.pdf', url: '#' },
+            { type: 'video', title: 'Quick Sort Explained', duration: '48 min' },
+            { type: 'pdf', title: 'Merge Sort Guide.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m6',
+          week: 6,
+          title: 'Search Algorithms',
+          completion: 0,
+          status: 'locked',
+          xp: 25,
+          materials: [
+            { type: 'slides', title: 'Binary Search.pdf', url: '#' },
+            { type: 'video', title: 'Search Optimization', duration: '40 min' },
+            { type: 'pdf', title: 'Hashing Techniques.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m7',
+          week: 7,
+          title: 'Dynamic Programming',
+          completion: 0,
+          status: 'locked',
+          xp: 30,
+          materials: [
+            { type: 'slides', title: 'DP Fundamentals.pdf', url: '#' },
+            { type: 'video', title: 'Memoization vs Tabulation', duration: '52 min' },
+            { type: 'pdf', title: 'DP Problems.pdf', url: '#' }
+          ]
+        },
+        {
+          id: 'dsa-m8',
+          week: 8,
+          title: 'Greedy Algorithms',
+          completion: 0,
+          status: 'locked',
+          xp: 25,
+          materials: [
+            { type: 'slides', title: 'Greedy Strategy.pdf', url: '#' },
+            { type: 'video', title: 'Optimization Problems', duration: '46 min' },
+            { type: 'pdf', title: 'Greedy vs DP.pdf', url: '#' }
+          ]
+        }
+      ]
     },
     {
       id: 'cs-301',
@@ -411,6 +516,8 @@ const STUDENT_DATA = {
           week: 1,
           title: 'Introduction to HTML & CSS',
           completion: 100,
+          status: 'completed',
+          xp: 20,
           materials: [
             { type: 'slides', title: 'HTML Basics.pdf', url: '#' },
             { type: 'video', title: 'CSS Fundamentals', duration: '45 min' },
@@ -422,6 +529,8 @@ const STUDENT_DATA = {
           week: 2,
           title: 'Responsive Web Design',
           completion: 100,
+          status: 'completed',
+          xp: 25,
           materials: [
             { type: 'slides', title: 'Flexbox & Grid.pdf', url: '#' },
             { type: 'video', title: 'Media Queries Tutorial', duration: '38 min' },
@@ -432,7 +541,9 @@ const STUDENT_DATA = {
           id: 'web-m3',
           week: 3,
           title: 'JavaScript Fundamentals',
-          completion: 85,
+          completion: 100,
+          status: 'completed',
+          xp: 25,
           materials: [
             { type: 'slides', title: 'JS Variables & Functions.pdf', url: '#' },
             { type: 'video', title: 'DOM Manipulation', duration: '52 min' },
@@ -443,7 +554,9 @@ const STUDENT_DATA = {
           id: 'web-m4',
           week: 4,
           title: 'Asynchronous JavaScript',
-          completion: 70,
+          completion: 100,
+          status: 'completed',
+          xp: 30,
           materials: [
             { type: 'slides', title: 'Promises & Async Await.pdf', url: '#' },
             { type: 'video', title: 'Fetch API Tutorial', duration: '41 min' },
@@ -454,7 +567,9 @@ const STUDENT_DATA = {
           id: 'web-m5',
           week: 5,
           title: 'React Basics',
-          completion: 45,
+          completion: 65,
+          status: 'in-progress',
+          xp: 25,
           materials: [
             { type: 'slides', title: 'React Components.pdf', url: '#' },
             { type: 'video', title: 'State & Props Explained', duration: '55 min' },
@@ -465,7 +580,9 @@ const STUDENT_DATA = {
           id: 'web-m6',
           week: 6,
           title: 'React Hooks & State Management',
-          completion: 30,
+          completion: 0,
+          status: 'available',
+          xp: 30,
           materials: [
             { type: 'slides', title: 'useState & useEffect.pdf', url: '#' },
             { type: 'video', title: 'Context API Tutorial', duration: '48 min' },
@@ -476,7 +593,9 @@ const STUDENT_DATA = {
           id: 'web-m7',
           week: 7,
           title: 'Backend Development with Node.js',
-          completion: 15,
+          completion: 0,
+          status: 'locked',
+          xp: 35,
           materials: [
             { type: 'slides', title: 'Node.js Basics.pdf', url: '#' },
             { type: 'video', title: 'Express Framework', duration: '62 min' },
@@ -488,6 +607,8 @@ const STUDENT_DATA = {
           week: 8,
           title: 'Database Integration & MongoDB',
           completion: 0,
+          status: 'locked',
+          xp: 35,
           materials: [
             { type: 'slides', title: 'MongoDB Fundamentals.pdf', url: '#' },
             { type: 'video', title: 'Mongoose ODM Tutorial', duration: '50 min' },
@@ -1169,6 +1290,129 @@ export default function ACLEPlatform() {
   useEffect(() => {
     console.log('Setting up Firebase listener for course materials...');
 
+    // Hardcoded demo materials for Data Structures Week 1
+    const hardcodedMaterials = {
+      'dsa': [
+        {
+          id: 'hardcoded-dsa-algo-basics',
+          courseId: 'dsa',
+          name: 'Algorithm Basics.pdf',
+          url: '#algorithm-basics-pdf',
+          uploadedBy: 'Prof. Johnson',
+          uploadedAt: new Date('2024-09-01'),
+          aiContent: {
+            audioUrl: 'data:audio/mp3;base64,mock-audio-data',
+            audioNarration: 'Welcome to Algorithm Basics. Algorithms are step-by-step procedures for solving problems. An algorithm is a finite sequence of well-defined instructions that takes some input and produces an output. Understanding algorithms is fundamental to computer science. Key characteristics of good algorithms include correctness, ensuring the algorithm produces the right output for all valid inputs, efficiency in terms of time and space complexity, clarity so others can understand and maintain the code, and finiteness meaning the algorithm must terminate after a finite number of steps. Common algorithmic paradigms include divide and conquer, dynamic programming, greedy algorithms, and backtracking. As you study algorithms, you will develop problem-solving skills that extend far beyond programming.',
+            flashcards: [
+              { front: 'What is an algorithm?', back: 'A step-by-step procedure for solving a problem or performing a computation' },
+              { front: 'What are the key characteristics of a good algorithm?', back: 'Correctness, Efficiency, Clarity, and Finiteness' },
+              { front: 'What is algorithmic correctness?', back: 'An algorithm that produces the right output for all valid inputs' },
+              { front: 'Name three common algorithmic paradigms', back: 'Divide and Conquer, Dynamic Programming, and Greedy Algorithms' },
+              { front: 'What does finiteness mean for algorithms?', back: 'The algorithm must terminate after a finite number of steps' }
+            ],
+            quiz: [
+              { question: 'Which is NOT a characteristic of a good algorithm?', options: ['Correctness', 'Efficiency', 'Ambiguity', 'Finiteness'], correctAnswer: 2 },
+              { question: 'What is the primary goal of an algorithm?', options: ['To use memory', 'To solve a problem systematically', 'To write code', 'To create complexity'], correctAnswer: 1 },
+              { question: 'Divide and Conquer is an example of:', options: ['A programming language', 'An algorithmic paradigm', 'A data structure', 'A compiler'], correctAnswer: 1 },
+              { question: 'An algorithm must:', options: ['Be written in Python', 'Terminate after finite steps', 'Use recursion', 'Be complex'], correctAnswer: 1 }
+            ],
+            mindMap: {
+              central: 'Algorithms',
+              branches: [
+                'Definition & Purpose',
+                'Key Characteristics',
+                'Correctness',
+                'Efficiency',
+                'Clarity',
+                'Finiteness',
+                'Algorithmic Paradigms',
+                'Divide & Conquer',
+                'Dynamic Programming',
+                'Greedy Algorithms',
+                'Problem Solving Skills',
+                'Real-world Applications'
+              ]
+            },
+            summary: 'Algorithm Basics introduces the fundamental concepts of algorithms in computer science. An algorithm is defined as a step-by-step procedure for solving problems, consisting of finite, well-defined instructions that transform inputs into outputs. Good algorithms exhibit four key characteristics: correctness (producing accurate results), efficiency (optimal use of time and space), clarity (understandable and maintainable code), and finiteness (guaranteed termination). The material covers major algorithmic paradigms including divide and conquer (breaking problems into subproblems), dynamic programming (storing solutions to avoid recomputation), greedy algorithms (making locally optimal choices), and backtracking (exploring all possible solutions). Understanding these fundamentals is essential for developing strong problem-solving skills applicable throughout computer science and software engineering.',
+            keyTopics: [
+              'Algorithm Definition',
+              'Step-by-step Procedures',
+              'Input and Output',
+              'Correctness Principle',
+              'Efficiency Metrics',
+              'Code Clarity',
+              'Finite Termination',
+              'Divide and Conquer',
+              'Dynamic Programming',
+              'Greedy Algorithms',
+              'Backtracking',
+              'Problem-solving Skills'
+            ]
+          }
+        },
+        {
+          id: 'hardcoded-dsa-bigo',
+          courseId: 'dsa',
+          name: 'Big O Notation Guide.pdf',
+          url: '#bigo-notation-pdf',
+          uploadedBy: 'Prof. Johnson',
+          uploadedAt: new Date('2024-09-01'),
+          aiContent: {
+            audioUrl: 'data:audio/mp3;base64,mock-audio-data-bigo',
+            audioNarration: 'Big O Notation is a mathematical notation used to describe the performance and complexity of algorithms. It specifically describes the worst-case scenario, helping us understand how an algorithm scales as input size grows. The O stands for order of magnitude. Common complexities include O of 1 for constant time, where execution time does not depend on input size. O of log n for logarithmic time, commonly seen in binary search. O of n for linear time, where time grows proportionally with input. O of n log n for linearithmic time, typical of efficient sorting algorithms like merge sort. O of n squared for quadratic time, seen in nested loops. And O of 2 to the n for exponential time, which becomes impractical for large inputs. Understanding Big O helps you choose the right algorithm and optimize your code effectively.',
+            flashcards: [
+              { front: 'What does Big O Notation measure?', back: 'The worst-case time or space complexity of an algorithm as input size grows' },
+              { front: 'What is O(1) complexity?', back: 'Constant time - execution time does not depend on input size' },
+              { front: 'What is O(log n) complexity?', back: 'Logarithmic time - time grows slowly as input increases, like binary search' },
+              { front: 'What is O(n) complexity?', back: 'Linear time - time grows proportionally with input size' },
+              { front: 'What is O(n²) complexity?', back: 'Quadratic time - time grows with the square of input size, common in nested loops' },
+              { front: 'Which is faster: O(log n) or O(n)?', back: 'O(log n) is faster and more efficient' },
+              { front: 'What complexity do efficient sorting algorithms like merge sort have?', back: 'O(n log n) - linearithmic time' }
+            ],
+            quiz: [
+              { question: 'Which complexity is the fastest?', options: ['O(n)', 'O(1)', 'O(n²)', 'O(log n)'], correctAnswer: 1 },
+              { question: 'Binary search has which time complexity?', options: ['O(n)', 'O(log n)', 'O(n²)', 'O(1)'], correctAnswer: 1 },
+              { question: 'What does Big O describe?', options: ['Best case', 'Average case', 'Worst case', 'Random case'], correctAnswer: 2 },
+              { question: 'Which is slowest for large inputs?', options: ['O(n)', 'O(log n)', 'O(2^n)', 'O(n log n)'], correctAnswer: 2 },
+              { question: 'Nested loops typically indicate which complexity?', options: ['O(1)', 'O(n)', 'O(n²)', 'O(log n)'], correctAnswer: 2 }
+            ],
+            mindMap: {
+              central: 'Big O Notation',
+              branches: [
+                'Complexity Analysis',
+                'Worst-case Performance',
+                'O(1) Constant',
+                'O(log n) Logarithmic',
+                'O(n) Linear',
+                'O(n log n) Linearithmic',
+                'O(n²) Quadratic',
+                'O(2^n) Exponential',
+                'Algorithm Comparison',
+                'Optimization Strategies',
+                'Space Complexity',
+                'Time Complexity'
+              ]
+            },
+            summary: 'Big O Notation Guide provides a comprehensive introduction to analyzing algorithm complexity. Big O notation mathematically describes how an algorithm\'s performance scales with input size, focusing on worst-case scenarios. The guide covers fundamental complexity classes: O(1) constant time operations that execute in fixed time regardless of input; O(log n) logarithmic operations like binary search that divide the problem space; O(n) linear operations that process each element once; O(n log n) linearithmic operations typical of efficient sorting algorithms; O(n²) quadratic operations with nested iterations; and O(2^n) exponential operations that become impractical quickly. Understanding these complexities enables developers to compare algorithms objectively, identify performance bottlenecks, and make informed decisions about algorithm selection and optimization. The notation provides a language-agnostic way to discuss efficiency, making it essential for technical interviews and system design.',
+            keyTopics: [
+              'Big O Definition',
+              'Complexity Measurement',
+              'Worst-case Analysis',
+              'Constant Time O(1)',
+              'Logarithmic Time O(log n)',
+              'Linear Time O(n)',
+              'Linearithmic O(n log n)',
+              'Quadratic O(n²)',
+              'Exponential O(2^n)',
+              'Algorithm Comparison',
+              'Performance Optimization',
+              'Space vs Time Tradeoffs'
+            ]
+          }
+        }
+      ]
+    };
+
     const materialsRef = collection(db, 'courseMaterials');
     const unsubscribe = onSnapshot(materialsRef, (snapshot) => {
       const materialsByCourse: any = {};
@@ -1183,6 +1427,20 @@ export default function ACLEPlatform() {
         materialsByCourse[courseId].push(material);
       });
 
+      // Merge hardcoded materials with Firebase materials
+      Object.keys(hardcodedMaterials).forEach(courseId => {
+        if (!materialsByCourse[courseId]) {
+          materialsByCourse[courseId] = [];
+        }
+        // Add hardcoded materials that don't already exist
+        hardcodedMaterials[courseId].forEach(hardcodedMat => {
+          const exists = materialsByCourse[courseId].some(mat => mat.id === hardcodedMat.id);
+          if (!exists) {
+            materialsByCourse[courseId].push(hardcodedMat);
+          }
+        });
+      });
+
       // Sort materials by upload date (newest first)
       Object.keys(materialsByCourse).forEach(courseId => {
         materialsByCourse[courseId].sort((a, b) => {
@@ -1193,6 +1451,12 @@ export default function ACLEPlatform() {
       });
 
       console.log('Firebase materials updated:', materialsByCourse);
+      console.log('🔍 DSA materials:', materialsByCourse['dsa']);
+      if (materialsByCourse['dsa']) {
+        materialsByCourse['dsa'].forEach((mat: any) => {
+          console.log('  📄 Material:', mat.name, '| Has AI Content:', !!mat.aiContent, '| Has audioUrl:', !!mat.aiContent?.audioUrl);
+        });
+      }
       setCourseMaterials(materialsByCourse);
     }, (error) => {
       console.error('Firebase listener error:', error);
@@ -1641,37 +1905,77 @@ Write ONLY the narration script, no extra text.`;
     }
   };
 
-  // Handle audio playback
-  const handlePlayAudio = (materialId: string, audioUrl: string) => {
-    // If already playing this audio, pause it
-    if (playingAudio === materialId && audioElement) {
-      audioElement.pause();
+  // Handle audio playback using Text-to-Speech
+  const handlePlayAudio = (materialId: string, _audioUrl?: string, narrationText?: string) => {
+    console.log('🔊 handlePlayAudio called for material:', materialId);
+
+    // If already playing this audio, stop it
+    if (playingAudio === materialId) {
+      console.log('⏹️ Stopping currently playing audio');
+      window.speechSynthesis.cancel();
+      if (audioElement) {
+        audioElement.pause();
+      }
       setPlayingAudio(null);
       setAudioElement(null);
+      showNotification('⏹️ Audio stopped');
       return;
     }
 
     // Stop any currently playing audio
+    window.speechSynthesis.cancel();
     if (audioElement) {
       audioElement.pause();
     }
 
-    // Create and play new audio
-    const audio = new Audio(audioUrl);
-    audio.play().then(() => {
-      setPlayingAudio(materialId);
-      setAudioElement(audio);
-      showNotification('🎵 Playing audio narration');
-    }).catch(error => {
-      console.error('Error playing audio:', error);
-      showNotification('❌ Failed to play audio');
-    });
+    // Find the material to get narration text
+    const material: any = Object.values(courseMaterials)
+      .flat()
+      .find((mat: any) => mat.id === materialId);
 
-    // Auto-cleanup when audio ends
-    audio.onended = () => {
+    console.log('📄 Found material:', material?.name);
+    console.log('📝 AI Content:', material?.aiContent ? 'Available' : 'Not available');
+
+    const textToSpeak = material?.aiContent?.audioNarration || narrationText || 'Audio narration is not available for this material.';
+
+    console.log('🗣️ Text to speak (first 100 chars):', textToSpeak.substring(0, 100));
+    console.log('📏 Text length:', textToSpeak.length, 'characters');
+
+    // Check if speech synthesis is supported
+    if (!('speechSynthesis' in window)) {
+      console.error('❌ Speech synthesis not supported in this browser');
+      showNotification('❌ Text-to-speech not supported in your browser');
+      return;
+    }
+
+    // Use Web Speech API for text-to-speech
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1.0;
+    utterance.volume = 1.0;
+
+    utterance.onstart = () => {
+      console.log('✅ Speech started successfully');
+      setPlayingAudio(materialId);
+      showNotification('🎵 Playing audio narration');
+    };
+
+    utterance.onend = () => {
+      console.log('✅ Speech ended');
       setPlayingAudio(null);
       setAudioElement(null);
+      showNotification('✅ Audio narration completed');
     };
+
+    utterance.onerror = (error) => {
+      console.error('❌ Speech synthesis error:', error);
+      showNotification('❌ Failed to play audio: ' + error.error);
+      setPlayingAudio(null);
+    };
+
+    console.log('🎬 Starting speech synthesis...');
+    window.speechSynthesis.speak(utterance);
+    console.log('🎬 Speech synthesis command sent');
   };
 
   // Professor Dashboard
@@ -2073,172 +2377,139 @@ Write ONLY the narration script, no extra text.`;
           </div>
         )}
 
-        {/* Course Content */}
+        {/* Course Modules - Week by Week */}
         <div className="bg-white rounded-lg shadow">
           <div className="p-6 border-b">
-            <h2 className="text-xl font-bold">Course Materials & Activities</h2>
+            <h2 className="text-xl font-bold">Course Modules</h2>
           </div>
           <div className="p-6">
-            {courseMaterials[selectedCourse?.id]?.length > 0 ? (
+            {selectedCourse?.modules && selectedCourse.modules.length > 0 ? (
               <div className="space-y-4">
-                {courseMaterials[selectedCourse?.id].map((material: any) => (
-                  <div key={material.id} className="border rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-                    <div className="p-4 bg-gray-50 border-b">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center space-x-3">
-                            <FileText className="h-6 w-6 text-blue-600" />
-                            <div>
-                              <h3 className="font-bold text-lg">{material.name}</h3>
-                              <p className="text-sm text-gray-600">
-                                Uploaded by {material.uploadedBy} on {material.uploadedAt?.toDate ? material.uploadedAt.toDate().toLocaleDateString() : new Date(material.uploadedAt).toLocaleDateString()}
-                              </p>
+                {selectedCourse.modules.map((module: any) => {
+                  const isCompleted = module.status === 'completed';
+                  const isInProgress = module.status === 'in-progress';
+                  const isAvailable = module.status === 'available';
+                  const isLocked = module.status === 'locked';
+
+                  return (
+                    <div
+                      key={module.id}
+                      className={`border-2 rounded-lg overflow-hidden transition-shadow ${
+                        isCompleted ? 'bg-green-50 border-green-300' :
+                        isInProgress ? 'bg-blue-50 border-blue-300' :
+                        isAvailable ? 'bg-yellow-50 border-yellow-300' :
+                        'bg-gray-50 border-gray-300 opacity-60'
+                      }`}
+                    >
+                      <div
+                        className={`p-4 border-b cursor-pointer ${
+                          isCompleted ? 'bg-green-100' :
+                          isInProgress ? 'bg-blue-100' :
+                          isAvailable ? 'bg-yellow-100' :
+                          'bg-gray-100 cursor-not-allowed'
+                        }`}
+                        onClick={() => !isLocked && openModule(module)}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-3 flex-1">
+                            {isCompleted && <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0" />}
+                            {isInProgress && <Play className="h-6 w-6 text-blue-600 flex-shrink-0" />}
+                            {isAvailable && <div className="w-6 h-6 rounded-full border-2 border-yellow-600 flex-shrink-0" />}
+                            {isLocked && <Lock className="h-6 w-6 text-gray-400 flex-shrink-0" />}
+
+                            <div className="flex-1">
+                              <h3 className="font-bold text-lg">Week {module.week}: {module.title}</h3>
+                              <div className="flex items-center gap-4 mt-2 flex-wrap">
+                                {!isLocked && (
+                                  <div className="flex items-center gap-2">
+                                    <div className="w-32 bg-gray-200 rounded-full h-2">
+                                      <div
+                                        className={`h-2 rounded-full ${
+                                          isCompleted ? 'bg-green-600' :
+                                          isInProgress ? 'bg-blue-600' :
+                                          'bg-yellow-600'
+                                        }`}
+                                        style={{ width: `${module.completion}%` }}
+                                      />
+                                    </div>
+                                    <span className={`text-sm font-semibold ${
+                                      isCompleted ? 'text-green-700' :
+                                      isInProgress ? 'text-blue-700' :
+                                      'text-yellow-700'
+                                    }`}>
+                                      {module.completion}%
+                                    </span>
+                                  </div>
+                                )}
+                                <span className="text-sm text-gray-600">
+                                  {module.materials?.length || 0} materials
+                                </span>
+                                {module.xp && (
+                                  <span className="text-sm text-gray-600">
+                                    +{module.xp} XP
+                                  </span>
+                                )}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <a
-                            href={material.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg flex items-center gap-2"
-                          >
-                            <Download className="h-4 w-4" />
-                            Download
-                          </a>
-                          <button
-                            onClick={() => handleDeleteMaterial(material)}
-                            className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg flex items-center gap-2 transition-colors"
-                            title="Delete material"
-                          >
-                            <Trash2 className="h-4 w-4" />
-                            Delete
-                          </button>
+
+                          <div className="flex items-center gap-3">
+                            {isInProgress && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  openModule(module);
+                                }}
+                                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-semibold"
+                              >
+                                Continue
+                              </button>
+                            )}
+                            {isAvailable && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  openModule(module);
+                                }}
+                                className="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 font-semibold"
+                              >
+                                Start
+                              </button>
+                            )}
+                            {!isLocked && <ChevronRight className="h-5 w-5 text-gray-400" />}
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* AI Study Tools Section */}
-                    <div className="p-4 space-y-4">
-                      <h4 className="font-bold text-gray-900 flex items-center gap-2">
-                        <Brain className="h-5 w-5 text-purple-600" />
-                        AI-Generated Study Tools
-                      </h4>
-
-                      {/* Flashcards */}
-                      {material.aiContent?.flashcards && material.aiContent.flashcards.length > 0 && (
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                          <h5 className="font-bold text-green-900 mb-3 flex items-center gap-2">
-                            <BookOpen className="h-4 w-4" />
-                            Flashcards ({material.aiContent.flashcards.length})
-                          </h5>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {material.aiContent.flashcards.slice(0, 2).map((card: any, cardIdx: number) => (
-                              <div key={cardIdx} className="bg-white p-3 rounded border border-green-300">
-                                <p className="font-semibold text-sm text-gray-900 mb-2">{card.question}</p>
-                                <p className="text-xs text-gray-600">{card.answer}</p>
-                              </div>
-                            ))}
-                          </div>
-                          {material.aiContent.flashcards.length > 2 && (
-                            <p className="text-xs text-green-700 mt-2">+ {material.aiContent.flashcards.length - 2} more flashcards</p>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Quiz Questions */}
-                      {material.aiContent?.quiz && material.aiContent.quiz.length > 0 && (
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                          <h5 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
-                            <Target className="h-4 w-4" />
-                            Practice Quiz ({material.aiContent.quiz.length} questions)
-                          </h5>
-                          <div className="space-y-3">
-                            {material.aiContent.quiz.slice(0, 1).map((question: any, qIdx: number) => (
-                              <div key={qIdx} className="bg-white p-3 rounded border border-blue-300">
-                                <p className="font-semibold text-sm text-gray-900 mb-2">{question.question}</p>
-                                <div className="space-y-1">
-                                  {question.options.map((option: string, optIdx: number) => (
-                                    <div key={optIdx} className="text-xs text-gray-600 flex items-center gap-2">
-                                      <span className={`w-5 h-5 flex items-center justify-center rounded-full text-xs ${
-                                        optIdx === question.correctAnswer
-                                          ? 'bg-green-200 text-green-900 font-bold'
-                                          : 'bg-gray-100'
-                                      }`}>
-                                        {String.fromCharCode(65 + optIdx)}
-                                      </span>
-                                      {option}
-                                    </div>
-                                  ))}
+                      {/* Module Materials Preview */}
+                      {module.materials && module.materials.length > 0 && (
+                        <div className="p-4 bg-white">
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            {module.materials.map((material: any, idx: number) => (
+                              <div key={idx} className="flex items-center gap-2 p-2 bg-gray-50 rounded border">
+                                {material.type === 'slides' && <FileText className="h-4 w-4 text-orange-600 flex-shrink-0" />}
+                                {material.type === 'video' && <Video className="h-4 w-4 text-red-600 flex-shrink-0" />}
+                                {material.type === 'pdf' && <FileText className="h-4 w-4 text-blue-600 flex-shrink-0" />}
+                                <div className="flex-1 min-w-0">
+                                  <p className="text-sm font-medium truncate">{material.title}</p>
+                                  {material.duration && (
+                                    <p className="text-xs text-gray-500">{material.duration}</p>
+                                  )}
                                 </div>
                               </div>
                             ))}
                           </div>
-                          {material.aiContent.quiz.length > 1 && (
-                            <p className="text-xs text-blue-700 mt-2">+ {material.aiContent.quiz.length - 1} more questions</p>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Mind Map */}
-                      {material.aiContent?.mindMap && (
-                        <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                          <h5 className="font-bold text-purple-900 mb-3 flex items-center gap-2">
-                            <Map className="h-4 w-4" />
-                            Mind Map
-                          </h5>
-                          <div className="bg-white p-4 rounded border border-purple-300">
-                            <div className="text-center mb-4">
-                              <div className="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-bold">
-                                {material.aiContent.mindMap.central}
-                              </div>
-                            </div>
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                              {material.aiContent.mindMap.branches.map((branch: string, branchIdx: number) => (
-                                <div key={branchIdx} className="bg-purple-100 text-purple-900 px-3 py-2 rounded text-sm text-center">
-                                  {branch}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Summary */}
-                      {material.aiContent?.summary && (
-                        <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-                          <h5 className="font-bold text-orange-900 mb-2 flex items-center gap-2">
-                            <FileText className="h-4 w-4" />
-                            Study Guide Summary
-                          </h5>
-                          <p className="text-sm text-gray-700 leading-relaxed">{material.aiContent.summary}</p>
-                          {material.aiContent.keyTopics && material.aiContent.keyTopics.length > 0 && (
-                            <div className="mt-3">
-                              <p className="text-xs font-semibold text-orange-900 mb-2">Key Topics:</p>
-                              <div className="flex flex-wrap gap-2">
-                                {material.aiContent.keyTopics.map((topic: string, topicIdx: number) => (
-                                  <span key={topicIdx} className="bg-white text-orange-900 px-2 py-1 rounded text-xs border border-orange-300">
-                                    {topic}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
                         </div>
                       )}
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
               <div className="text-center py-12 text-gray-500">
-                <FileText className="h-16 w-16 mx-auto mb-4 opacity-20" />
-                <p>No materials uploaded yet</p>
-                <p className="text-sm">
-                  {userRole === 'professor'
-                    ? 'Click "Upload Material" to add course content'
-                    : 'Your professor will upload materials here'}
-                </p>
+                <BookOpen className="h-16 w-16 mx-auto mb-4 opacity-20" />
+                <p>No modules available yet</p>
+                <p className="text-sm">Check back later for course modules</p>
               </div>
             )}
           </div>
@@ -2485,6 +2756,149 @@ Write ONLY the narration script, no extra text.`;
                     />
                   </div>
                 </div>
+
+                {/* Week-by-Week Modules */}
+                {selectedCourse?.modules && selectedCourse.modules.length > 0 && (
+                  <div className="mb-8">
+                    <h2 className="text-2xl font-bold mb-6">Weekly Modules</h2>
+                    <div className="space-y-4">
+                      {selectedCourse.modules.map((module: any) => {
+                        const isCompleted = module.status === 'completed';
+                        const isInProgress = module.status === 'in-progress';
+                        const isAvailable = module.status === 'available';
+                        const isLocked = module.status === 'locked';
+
+                        return (
+                          <div
+                            key={module.id}
+                            className={`border-2 rounded-lg overflow-hidden transition-shadow ${
+                              isCompleted ? 'bg-green-50 border-green-300' :
+                              isInProgress ? 'bg-blue-50 border-blue-300' :
+                              isAvailable ? 'bg-yellow-50 border-yellow-300' :
+                              'bg-gray-50 border-gray-300 opacity-60'
+                            }`}
+                          >
+                            <div
+                              className={`p-4 border-b cursor-pointer ${
+                                isCompleted ? 'bg-green-100' :
+                                isInProgress ? 'bg-blue-100' :
+                                isAvailable ? 'bg-yellow-100' :
+                                'bg-gray-100 cursor-not-allowed'
+                              }`}
+                              onClick={() => !isLocked && openModule(module)}
+                            >
+                              <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-3 flex-1">
+                                  {isCompleted && <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0" />}
+                                  {isInProgress && <Play className="h-6 w-6 text-blue-600 flex-shrink-0" />}
+                                  {isAvailable && <div className="w-6 h-6 rounded-full border-2 border-yellow-600 flex-shrink-0" />}
+                                  {isLocked && <Lock className="h-6 w-6 text-gray-400 flex-shrink-0" />}
+
+                                  <div className="flex-1">
+                                    <h3 className="font-bold text-lg">Week {module.week}: {module.title}</h3>
+                                    <div className="flex items-center gap-4 mt-2 flex-wrap">
+                                      {!isLocked && (
+                                        <div className="flex items-center gap-2">
+                                          <div className="w-32 bg-gray-200 rounded-full h-2">
+                                            <div
+                                              className={`h-2 rounded-full ${
+                                                isCompleted ? 'bg-green-600' :
+                                                isInProgress ? 'bg-blue-600' :
+                                                'bg-yellow-600'
+                                              }`}
+                                              style={{ width: `${module.completion}%` }}
+                                            />
+                                          </div>
+                                          <span className={`text-sm font-semibold ${
+                                            isCompleted ? 'text-green-700' :
+                                            isInProgress ? 'text-blue-700' :
+                                            'text-yellow-700'
+                                          }`}>
+                                            {module.completion}%
+                                          </span>
+                                        </div>
+                                      )}
+                                      <span className="text-sm text-gray-600">
+                                        {module.materials?.length || 0} materials
+                                      </span>
+                                      {module.xp && (
+                                        <span className="text-sm text-gray-600">
+                                          +{module.xp} XP
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="flex items-center gap-3">
+                                  {isInProgress && (
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        openModule(module);
+                                      }}
+                                      className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-semibold"
+                                    >
+                                      Continue
+                                    </button>
+                                  )}
+                                  {isAvailable && (
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        openModule(module);
+                                      }}
+                                      className="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 font-semibold"
+                                    >
+                                      Start
+                                    </button>
+                                  )}
+                                  {isCompleted && (
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        openModule(module);
+                                      }}
+                                      className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 font-semibold"
+                                    >
+                                      Review
+                                    </button>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* Materials preview - only show for non-locked modules */}
+                            {!isLocked && (
+                              <div className="p-4 bg-white">
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                  {module.materials.slice(0, 3).map((material: any, idx: number) => (
+                                    <div key={idx} className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                                      {material.type === 'video' && <Play className="h-4 w-4 text-blue-600 flex-shrink-0" />}
+                                      {material.type === 'slides' && <FileText className="h-4 w-4 text-green-600 flex-shrink-0" />}
+                                      {material.type === 'pdf' && <FileText className="h-4 w-4 text-red-600 flex-shrink-0" />}
+                                      <div className="flex-1 min-w-0">
+                                        <p className="text-sm font-medium truncate">{material.title}</p>
+                                        {material.duration && (
+                                          <p className="text-xs text-gray-500">{material.duration}</p>
+                                        )}
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                                {module.materials.length > 3 && (
+                                  <p className="text-xs text-gray-500 mt-2 text-center">
+                                    +{module.materials.length - 3} more materials
+                                  </p>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
                 <h2 className="text-2xl font-bold mb-6">Course Materials</h2>
 
